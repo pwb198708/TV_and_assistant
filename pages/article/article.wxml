@@ -1,0 +1,35 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">安徽移动互联网电视</view>
+    <view class="page__desc">---互联网电视三位一体体检</view>
+  </view>
+  <view class="weui-article">
+    <view class="weui-article__h1">宽带账号：{{getId}}(铜陵)</view>
+    <view class="weui-cells weui-cells_after-title"></view>
+    <view class="weui-article__h3">1. 机顶盒网络</view>
+    <view class="weui-article__p">接入方式：{{getList.Access}}</view>
+    <view class="weui-article__p">内网地址：{{getList.Used_ip}}</view>
+    <view class="weui-article__p">内网网关：{{getList.Gateway}}</view>
+    <view class="weui-article__p">有线MAC：{{getList.Cable_mac}}</view>
+    <view class="weui-article__p">无线MAC：{{getList.Wireless_mac}}</view>
+    <view class="weui-cells weui-cells_after-title"></view>
+    <view class="weui-article__h3">2. 机顶盒设备</view>
+    <image class="weui-article__img" src="/image/jidinghe.jpg" mode="aspectFit" style="height: 180px"></image>
+    <view class="weui-article__p">厂商：{{getList.Firm}}</view>
+    <view class="weui-article__p">型号：{{getList.Model}}</view>
+    <view class="weui-article__p">SN号：{{getList.SN}}</view>
+    <view class="weui-article__p">牌照方：{{getList.Tag}}</view>
+    <view class="weui-article__p">软件版本：{{getList.Version}}</view>
+    <view class="weui-article__p">
+    </view>
+    <view class="weui-cells weui-cells_after-title"></view>
+    <view class="weui-article__h3">3. 收视质量({{getDate}})</view>
+    <view class="weui-article__p">卡顿等级：{{Level}}</view>
+    <view class="weui-article__p">卡顿次数：{{Count}}</view>
+    <view class="weui-article__p">问题类别：{{Type}}</view>
+    <view class="weui-article__p">原因分析：{{Cause}}</view>
+    <image class="weui-article__img" src="/image/dianshi.jpg" mode="aspectFit" style="height: 180px"></image>
+    <view class="weui-cells weui-cells_after-title"></view>
+    <view class="weui-article__h3"></view>
+  </view>
+</view>

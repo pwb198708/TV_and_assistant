@@ -1,0 +1,66 @@
+<view>
+  <swiper indicator-dots="true" autoplay="true" circular="true">
+    <swiper-item>
+      <image src="/image/swiper1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/swiper2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/swiper3.jpg"></image>
+    </swiper-item>
+  </swiper>
+
+  <view class="weui-cells__title">请选择互联网电视用户</view>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd weui-cell__hd_in-select-after">
+          <view class="weui-label">地区</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker name="area" bindchange="bindCountryChange" value="{{countryIndex}}" range="{{countries}}">
+            <view class="weui-select weui-select_in-select-after">{{countries[countryIndex]}}</view>
+          </picker>
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">账号</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input name="id" class="weui-input" placeholder="请输入您的移动宽带账号" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">日期</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker name="date" mode="date" value="{{date}}" start="2016-09-01" end="{{time}}" bindchange="bindDateChange">
+            <view class="weui-input">{{date}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+
+    <checkbox-group name="agree" bindchange="bindAgreeChange">
+      <label class="weui-agree" for="weuiAgree">
+        <view class="weui-agree__text">
+          <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+          <view class="weui-agree__checkbox-icon">
+            <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+          </view>
+          阅读并同意
+          <view class="weui-agree__link" catchtap="openAlert">《使用协议》</view>
+        </view>
+      </label>
+    </checkbox-group>
+
+    <view class="weui-btn-area">
+      <button class="weui-btn" type="primary" formType="submit">查询</button>
+    </view>
+  </form>
+</view>

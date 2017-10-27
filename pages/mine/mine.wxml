@@ -1,0 +1,51 @@
+<view class="userinfo">
+  <image class="userinfo-avatar" wx:if="{{userInfo.avatarUrl}}" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  <view class="welcome">
+    <text>hi，亲爱的{{userInfo.nickName}}</text>
+    <text>欢迎使用电视和助手！</text>
+  </view>
+</view>
+<view class="weui-cells__title">您还可以进行下列查询和操作</view>
+<view class="weui-cells weui-cells_after-title">
+  <view bindtap='WiFi' class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="/image/mine/jieru.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </view>
+    <view class="weui-cell__bd">接入优化</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">{{count1}}条预约</view>
+  </view>
+  <view bindtap='Content' class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="/image/mine/neirong.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </view>
+    <view class="weui-cell__bd">内容优化</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">{{count2}}条预约</view>
+  </view>
+  <navigator url="../code/code" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="/image/mine/erweima.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </view>
+    <view class="weui-cell__bd">小程序码</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">一键生成</view>
+  </navigator>
+  <navigator url="../suggestion/suggestion" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="/image/mine/yijian.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </view>
+    <view class="weui-cell__bd">意见反馈</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">我要反馈</view>
+  </navigator>
+  <navigator url="../about/about" class="weui-cell weui-cell_access" hover-class="weui-cell_active" margin-bottom="100rpx">
+    <view class="weui-cell__hd">
+      <image src="/image/mine/women.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </view>
+    <view class="weui-cell__bd">关于我们</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">团队介绍</view>
+  </navigator>
+</view>
+
+
+
+<view class="weui-footer weui-footer_fixed-bottom">
+  <view class="weui-footer__text">Copyright © 2017-2018 铜陵移动网络部</view>
+</view>

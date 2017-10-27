@@ -1,0 +1,22 @@
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100rpx;
+  margin-bottom: 80rpx
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  margin: 30rpx;
+}
+
+

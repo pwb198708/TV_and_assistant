@@ -1,0 +1,77 @@
+<view class="flex-row">
+  <view class="film-item1" bindtap='click1'>
+    <view class="film-cover">
+      <image src="/image/pic/wifi.jpg" class="film-cover-img"></image>
+      <view class="film-rating">
+        <view>
+          {{num.click1}}人已使用
+        </view>
+      </view>
+    </view>
+    <view class="file-intro">
+      <view class="film-title">接入优化</view>
+      <view class="film-tag">
+        <view class="film-tag-item">WiFi</view>
+        <view class="film-tag-item">机顶盒</view>
+        <view class="film-tag-item">有线接入</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="film-item1" bindtap='click2'>
+    <view class="film-cover">
+      <image src="/image/pic/tisu.jpg" class="film-cover-img"></image>
+      <view class="film-rating">
+        <view>
+          {{num.click2}}人已使用
+        </view>
+      </view>
+    </view>
+    <view class="file-intro">
+      <view class="film-title">宽带提速</view>
+      <view class="film-tag">
+        <view class="film-tag-item">4K视频</view>
+        <view class="film-tag-item">大带宽</view>
+        <view class="film-tag-item">100M</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="flex-row">
+  <view class="film-item2" bindtap='click3'>
+    <view class="film-cover">
+      <image src="/image/pic/pianyuan.jpg" class="film-cover-img"></image>
+      <view class="film-rating">
+        <view>
+          {{num.click3}}人已使用
+        </view>
+      </view>
+    </view>
+    <view class="file-intro">
+      <view class="film-title">内容优化</view>
+      <view class="film-tag">
+        <view class="film-tag-item">视频源</view>
+        <view class="film-tag-item">卡顿</view>
+        <view class="film-tag-item">无法播放</view>
+      </view>
+    </view>
+  </view>
+  <view class="film-item2" bindtap='click4'>
+    <view class="film-cover">
+      <image src="/image/pic/kefu.jpg" class="film-cover-img"></image>
+      <view class="film-rating">
+        <view>
+          {{num.click4}}人已使用
+        </view>
+      </view>
+    </view>
+    <view class="file-intro">
+      <view class="film-title">电话投诉</view>
+      <view class="film-tag">
+        <view class="film-tag-item">快速通道</view>
+        <view class="film-tag-item">客服</view>
+        <view class="film-tag-item">本地电话</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,32 @@
+<block wx:for="{{arrays}}" wx:key="sj" wx:for-index="idx" wx:for-item="array">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="weui-form-preview">
+      <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__label">{{idx+1}}.宽带账号</view>
+        <view class="weui-form-preview__value_in-hd">{{array.zh}}</view>
+      </view>
+      <view class="weui-form-preview__bd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">地址</view>
+          <view class="weui-form-preview__value">{{array.dz}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">内容源</view>
+          <view class="weui-form-preview__value">{{array.zy}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">提交时间</view>
+          <view class="weui-form-preview__value">{{array.sj}}</view>
+        </view>
+        <view class="weui-form-preview__item0">
+          <view class="weui-form-preview__label">工单号</view>
+          <input name="objectId" class="weui-form-preview__value" value="{{array.objectId}}"></input>
+        </view>
+      </view>
+      <view class="weui-form-preview__ft">
+        <button class="weui-form-preview__btn weui-form-preview__btn_default" hover-class="weui-form-preview__btn_active" bindtap='quick'>催促处理</button>
+        <button class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active" formType="submit">确定恢复</button>
+      </view>
+    </view>
+  </form>
+</block>

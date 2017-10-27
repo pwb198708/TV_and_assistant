@@ -1,0 +1,70 @@
+<view class="page__hd">
+  <view class="page__title">预约WiFi改有线接入</view>
+  <view class="page__desc">机顶盒有线网络下播放更稳定</view>
+</view>
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">账号</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="zh" class="weui-input" placeholder="宽带账号" />
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <picker name="ds" bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+          <view class="weui-select">{{countryCodes[countryCodeIndex]}}</view>
+        </picker>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="dz" class="weui-input" placeholder="\r\n\r\n\r\n\r\n\r\n\r\n家庭住址" />
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">姓名</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="xm" class="weui-input" placeholder="联系人姓名" />
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">手机</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="hm" class="weui-input" placeholder="联系人号码" />
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">备注</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="bz" class="weui-input" placeholder="" />
+      </view>
+    </view>
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_switch">
+        <view class="weui-cell__bd">是否卡顿：否/是</view>
+        <view class="weui-cell__ft">
+          <switch name="kd" checked />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells__tips">{{time}}</view>
+
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" formType="submit">提交</button>
+    <button class="weui-btn" type="default" bindtap="comeBack">返回</button>
+  </view>
+</form>

@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/article/article",
+    "pages/mine/mine",
+    "pages/service/service",
+    "pages/wifi/wifi",
+    "pages/content/content",
+    "pages/suggestion/suggestion",
+    "pages/about/about",
+    "pages/my_wifi/my_wifi",
+    "pages/my_content/my_content",
+    "pages/code/code"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "电视和助手",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fff",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "/image/icon/sousuo.png",
+        "iconPath": "/image/icon/sousuo.png",
+        "pagePath": "pages/index/index",
+        "text": "查询"
+      },
+      {
+        "selectedIconPath": "/image/icon/service.png",
+        "iconPath": "/image/icon/service.png",
+        "pagePath": "pages/service/service",
+        "text": "服务"
+      },
+      {
+        "selectedIconPath": "/image/icon/mine.png",
+        "iconPath": "/image/icon/mine.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}

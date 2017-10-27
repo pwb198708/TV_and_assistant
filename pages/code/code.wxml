@@ -1,0 +1,3 @@
+<view class="pic">
+  <image class="img" src="/image/code.jpg"></image>
+</view>

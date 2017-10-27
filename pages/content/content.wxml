@@ -1,0 +1,61 @@
+<view class="page__hd">
+  <view class="page__title">直播或点播源故障反馈</view>
+  <view class="page__desc">电视频道或片源无法收看或卡顿</view>
+</view>
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">账号</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="zh" class="weui-input" placeholder="宽带账号" />
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <picker name="ds" bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+          <view class="weui-select">{{countryCodes[countryCodeIndex]}}</view>
+        </picker>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="dz" class="weui-input" placeholder="\r\n\r\n\r\n\r\n\r\n\r\n家庭住址" />
+      </view>
+    </view>
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_switch">
+        <view class="weui-cell__bd">直播/点播</view>
+        <view>
+          <switch name="zylx" checked />
+        </view>
+      </view>
+    </view>
+
+    <view class=" weui-cells_after-title">
+      <view class="weui-cell weui-cell_switch">
+        <view class="weui-cell__bd">卡顿/无法播放</view>
+        <view>
+          <switch name="gzlx" checked />
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">资源</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="zy" class="weui-input" placeholder="频道或片源" />
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells__tips">{{time}}</view>
+
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" formType="submit">提交</button>
+    <button class="weui-btn" type="default" bindtap="comeBack">返回</button>
+  </view>
+</form>

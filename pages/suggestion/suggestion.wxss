@@ -1,0 +1,7 @@
+.page__title {
+  text-align: center
+}
+
+.weui-cells__tips {
+  margin-bottom: 100rpx
+}

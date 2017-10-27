@@ -1,0 +1,25 @@
+<view class="page__hd">
+  <view class="page__title">意见反馈</view>
+</view>
+
+<view class="weui-cells__title">建议栏</view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <textarea name="jy" class="weui-textarea" placeholder="请输您的意见或建议" style="height: 3.3em" />
+        <view class="weui-textarea-counter">0/200</view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells__tips">
+    <view>{{time}}</view>
+    <view>已有{{count}}人反馈过意见</view>
+  </view>
+
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" formType="submit">提交</button>
+    <button class="weui-btn" type="default" bindtap="comeBack">返回</button>
+  </view>
+
+</form>

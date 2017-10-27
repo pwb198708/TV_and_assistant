@@ -1,0 +1,9 @@
+.weui-form-preview{
+    margin-bottom: 20rpx;
+    margin-top: 10rpx
+}
+
+.weui-form-preview__item0 {
+  overflow: hidden;
+  display: none
+}

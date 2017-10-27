@@ -1,0 +1,13 @@
+.img {
+  width: 90%;
+  height: 675rpx;
+  margin-top: 180rpx
+}
+
+.pic {
+  text-align: center
+}
+
+page {
+  background-color: #fff
+}
