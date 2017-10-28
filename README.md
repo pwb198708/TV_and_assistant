@@ -19,3 +19,4 @@ A WeChat program of Internet TV
 
 ### 项目截图：
 该项目已上线发布，微信搜索“电视和助手”，打开小程序即可体验。
+
