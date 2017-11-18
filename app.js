@@ -1,6 +1,6 @@
 //引入并注册自己的Bmob SDK
 var Bmob = require('utils/bmob.js')
-Bmob.initialize("280976924147689c99c29b91aa511d47", "a33d4ee1166ddc9b6517f570e995373f")
+Bmob.initialize("280976924147689c99c29b91aa511d47", "我的Bmob秘钥（保密）")
 App({
   onLaunch: function () {
 
